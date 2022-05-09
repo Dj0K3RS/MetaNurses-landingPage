@@ -1,0 +1,53 @@
+.about{
+    img{
+        border-radius: 20px;
+        
+    }
+    .row{
+        margin: 100px 0;
+    }
+    .text{
+        margin-left: 10%;
+        text-align: inherit;
+        display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    padding: 0 0 0 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .about{
+        .row{
+            margin: 0;
+        }
+    .content{
+        text-align: center;
+        .title{  width: 100%;
+            h2{
+              
+            }
+        }
+        img{
+            max-width: 500px!important;
+            margin: auto;
+        }
+        .text{
+            text-align: center!important;
+            margin: inherit;
+            h3{
+                text-align: center!important;
+                width: 100%;
+                margin-top: 50px ;
+            }
+            a{
+                width: 100%;
+            }
+           
+            
+        }
+    }
+}
+}

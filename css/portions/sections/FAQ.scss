@@ -1,0 +1,25 @@
+.FAQ{
+    background: black;
+    padding: 70px 0;
+    h2{
+        margin-top: 0;
+    }
+    .accordion{
+        .accordion-item{
+            margin: 10px 0;
+            .accordion-header{
+                
+            }
+            button{
+                font-size: 1.75rem;
+                font-family: Gomarice!important;
+            }
+            .accordion-body{
+                background: black;
+            }
+            .accordion-button:not(.collapsed){
+                color: black;
+            }
+        }
+    }
+}

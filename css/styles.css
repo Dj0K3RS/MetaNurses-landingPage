@@ -1,0 +1,449 @@
+@charset "UTF-8";
+/**
+ * Mdsoft INT
+ *
+ * @category    Integration
+ * @package     Global STYLUS
+ * @copyright   Copyright (c) 2016 MDWEB. (http://www.mdweb-int.com)
+ * @author      BESSROUR Ahmed (ahmed.bessrour@gmail.com)
+ */
+/*==== Reset=================*/
+.menu {
+  border: 1px #9b9b9b;
+  border-bottom: 2px solid #9b9b9b;
+  background: #1b1b1b;
+}
+.menu .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.menu .navbar-collapse .navbar-nav .nav-link {
+  margin-right: 2rem;
+}
+.menu .socials a {
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .menu .navbar-collapse .navbar-nav .nav-link {
+    margin-right: inherit;
+  }
+}
+.title {
+  text-align: center;
+}
+.title button {
+  margin: 20px;
+}
+
+.roadmap .roadmap-content {
+  text-align: center;
+}
+
+footer {
+  border: 1px #9b9b9b;
+  border-top: 2px solid #9b9b9b;
+  background: #1b1b1b;
+  padding: 20px;
+}
+footer .logo {
+  float: left;
+}
+footer .logo span {
+  font-size: 1.72em;
+}
+footer .logo img {
+  max-width: 100px;
+}
+footer .socials {
+  float: right;
+}
+footer .socials a {
+  margin: 0 50px;
+}
+footer .socials a:hover {
+  color: #9b9b9b;
+}
+
+@media screen and (max-width: 490px) {
+  .about h3 {
+    margin: 20px 0 0 0;
+  }
+
+  footer .logo {
+    float: inherit;
+    text-align: center;
+  }
+  footer .social {
+    float: inherit;
+    text-align: center;
+  }
+}
+#div-cookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333536;
+  padding: 5px;
+  font-family: Gilroy-Medium, sans-serif;
+  text-align: center;
+  z-index: 99;
+}
+
+.FAQ {
+  background: black;
+  padding: 70px 0;
+}
+.FAQ h2 {
+  margin-top: 0;
+}
+.FAQ .accordion .accordion-item {
+  margin: 10px 0;
+}
+.FAQ .accordion .accordion-item button {
+  font-size: 1.75rem;
+  font-family: Gomarice !important;
+}
+.FAQ .accordion .accordion-item .accordion-body {
+  background: black;
+}
+.FAQ .accordion .accordion-item .accordion-button:not(.collapsed) {
+  color: black;
+}
+
+.roadmap {
+  overflow: hidden;
+  padding: 70px 0;
+  background: #0000006e;
+  /*puces*/
+}
+.roadmap h2 {
+  margin-top: 0;
+}
+.roadmap .title-section {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.roadmap .top-section {
+  text-align: center;
+  padding: 4rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.roadmap .timeline {
+  position: relative;
+  min-height: 150px;
+}
+.roadmap .line {
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 2px);
+  width: 5px;
+  top: -50px;
+  background: white;
+  display: none;
+}
+.roadmap .line:before,
+.roadmap .line::after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background: white;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.roadmap .line:after {
+  bottom: 0;
+}
+.roadmap .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 600ms ease;
+  transition: 600ms ease;
+  position: relative;
+  z-index: 1;
+  margin: 50px 0;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 300px;
+}
+.roadmap .section:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.roadmap .bead {
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background: white;
+  left: 50%;
+  top: 4%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 11px 6px;
+  z-index: 5;
+}
+.roadmap .content {
+  width: calc(50% - 2rem);
+}
+.roadmap .show-me:nth-child(n) {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+}
+.roadmap .roadmap ul li::before {
+  content: "";
+  color: #f67a16;
+  display: inline-block;
+  width: 15px;
+  margin-left: 0em;
+  margin-right: 15px;
+  border-radius: 50%;
+  font-family: "Font Awesome 5 Free";
+}
+.roadmap .roadmap ul {
+  list-style: none;
+  padding-left: 0;
+}
+.roadmap .roadmap ul li {
+  margin: 30px 0;
+  font-size: 22px;
+}
+.roadmap .roadmap ul .Done {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 767px) {
+  .roadmap .timeline .line {
+    display: none !important;
+  }
+  .roadmap .timeline .content {
+    width: inherit;
+  }
+  .roadmap .timeline .bead {
+    top: -43px;
+  }
+}
+.slider {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  margin: 22px auto auto;
+  margin: 100px 0 50px 0px;
+}
+
+.slider .owl-item img {
+  border-radius: 25px;
+  height: 100%;
+}
+.slider:before {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.1, #1b1b1b), to(rgba(226, 225, 225, 0)));
+  background: linear-gradient(90deg, #1b1b1b 0.1, rgba(226, 225, 225, 0));
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  opacity: 0.5;
+}
+.slider:after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.Akina {
+  padding: 70px 0;
+  border-bottom: 1px solid gray;
+}
+.Akina .card-gif {
+  border: 5px solid white;
+  border-radius: 20px;
+}
+.Akina .card-gif img {
+  border-radius: 15px;
+}
+.Akina .title {
+  margin-left: 10%;
+  text-align: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0 0 0 10px;
+}
+.Akina .title h1 {
+  text-align: inherit;
+  margin: 0;
+}
+.Akina .title p {
+  margin: 30px 0;
+}
+.Akina .title button {
+  margin: inherit;
+}
+
+.about img {
+  border-radius: 20px;
+}
+.about .row {
+  margin: 100px 0;
+}
+.about .text {
+  margin-left: 10%;
+  text-align: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0 0 0 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .about .row {
+    margin: 0;
+  }
+  .about .content {
+    text-align: center;
+  }
+  .about .content .title {
+    width: 100%;
+  }
+  .about .content img {
+    max-width: 500px !important;
+    margin: auto;
+  }
+  .about .content .text {
+    text-align: center !important;
+    margin: inherit;
+  }
+  .about .content .text h3 {
+    text-align: center !important;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .about .content .text a {
+    width: 100%;
+  }
+}
+body {
+  font-family: Gomarice;
+  background: #1b1b1b;
+  color: white;
+}
+
+h1, h2 {
+  text-align: center;
+  font-size: 60px;
+  margin: 100px 0 50px 0px;
+}
+
+p {
+  font-family: Gilory;
+  margin-top: 18px;
+  font-size: 22px;
+}
+
+summary {
+  font-size: 22px;
+  padding: 1rem 0px 10px;
+}
+
+.btn {
+  border-radius: 18px;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+.Gallery {
+  padding: 75px 0;
+}
+.Gallery h2 {
+  margin-top: 0;
+}
+
+.team {
+  padding: 70px 0;
+}
+.team h2 {
+  margin-top: 0;
+}
+.team .ourTeam-hedding {
+  margin-bottom: 50px;
+}
+.team .ourTeam-box {
+  border-radius: 20px;
+  margin: 0px;
+  background-color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.team .section1 {
+  padding: 30px 0px 30px 0px;
+}
+.team .section1 img {
+  border-radius: 20%;
+  max-height: 230px;
+  max-width: 230px;
+}
+.team .section2 p {
+  font-family: Gomarice !important;
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: black;
+}
+.team .section2 span {
+  font-family: Gilory;
+  margin-top: 18px;
+  font-size: 22px;
+  color: black;
+}
+
+/*===========================*/
