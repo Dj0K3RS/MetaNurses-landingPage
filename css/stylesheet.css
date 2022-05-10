@@ -8,19 +8,26 @@
 
 
 @font-face {
-    font-family:'Gomarice';
-    src: url('../fonts/gomarice/gomarice.woff');
+    font-family:'PoppinBold';
+    src: url('../fonts/Poppin/Poppins-ExtraBold.ttf');
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
 
 }
 @font-face {
-    font-family:'Gilory';
-    src: url('../fonts/gilory/Gilory.otf');
+    font-family:'Poppin';
+    src: url('../fonts/Poppin/Poppins-Regular.ttf');
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
 
 }
+@font-face {
+    font-family:'PoppinLight';
+    src: url('../fonts/Poppin/Poppins-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
 
+}

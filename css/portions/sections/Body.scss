@@ -9,11 +9,15 @@
     text-align: center;
 }
 footer{
-    border: 1px #9b9b9b;
-    border-top: 2px solid #9b9b9b;
-    background: #1b1b1b;
+ 
+    border-top: 2px solid #dc3545;
+    .navbar-brand{
+        font-size: 15px;
+    }
     padding: 20px;
-   
+    .menu{
+        border: none;
+    }
     .logo{
         float: left;
         span{
@@ -24,11 +28,12 @@ footer{
             
         }
     }
-    .socials{
+    .social{
       
-        float: right;
-        a{
-            margin: 0 50px;
+      text-align: center;
+      margin: 20px 0;
+        a{  text-decoration: none;
+            margin: 0 20px;
             &:hover{
                 color: #9b9b9b;
             }

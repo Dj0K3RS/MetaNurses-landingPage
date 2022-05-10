@@ -1,7 +1,11 @@
 .menu{
-    border: 1px #9b9b9b;
-    border-bottom: 2px solid #9b9b9b;
-    background: #1b1b1b;
+  
+    border-bottom: 2px solid #dc3545;
+    a{  color: white;
+        &:hover{
+            color: #dc3545!important;
+        }
+    }
     .navbar-collapse {
            flex-grow: 0;
            text-align: center;
@@ -16,6 +20,7 @@
     .socials{
         a{
             margin: 0 20px;
+          
         }
     }
 }

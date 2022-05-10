@@ -1,7 +1,14 @@
 body{
-    font-family: Gomarice;
-    background: #1b1b1b;
+    font-family: Poppin;
+    background: black;
+    z-index: 1;
     color: white;
+}
+#main-content{
+    position: relative;
+    z-index: 2;
+    background-image: radial-gradient(circle farthest-side at 100% 0, rgb(255 27 27 / 20%), transparent 72%);
+
 }
 h1,h2{
     text-align: center;
@@ -10,7 +17,7 @@ h1,h2{
 }
 
 p{
-    font-family: Gilory;
+    font-family: Poppin;
     margin-top: 18px;
     font-size: 22px;
 }
@@ -19,14 +26,18 @@ summary{
     padding: 1rem 0px 10px;
 }
 .btn{
-    border-radius: 18px;
+    border: 2px solid #b92c28;
     font-size: 20px;
     padding:10px 20px;
-    
+    background: none;
   
    
+}
+.button{
+    font-family: Poppin;
 }
 a{
     color: inherit;
     display: inline-block;
 }
+$red:#dc3545

@@ -9,9 +9,13 @@
  */
 /*==== Reset=================*/
 .menu {
-  border: 1px #9b9b9b;
-  border-bottom: 2px solid #9b9b9b;
-  background: #1b1b1b;
+  border-bottom: 2px solid #dc3545;
+}
+.menu a {
+  color: white;
+}
+.menu a:hover {
+  color: #dc3545 !important;
 }
 .menu .navbar-collapse {
   -webkit-box-flex: 0;
@@ -46,10 +50,14 @@
 }
 
 footer {
-  border: 1px #9b9b9b;
-  border-top: 2px solid #9b9b9b;
-  background: #1b1b1b;
+  border-top: 2px solid #dc3545;
   padding: 20px;
+}
+footer .navbar-brand {
+  font-size: 15px;
+}
+footer .menu {
+  border: none;
 }
 footer .logo {
   float: left;
@@ -60,13 +68,15 @@ footer .logo span {
 footer .logo img {
   max-width: 100px;
 }
-footer .socials {
-  float: right;
+footer .social {
+  text-align: center;
+  margin: 20px 0;
 }
-footer .socials a {
-  margin: 0 50px;
+footer .social a {
+  text-decoration: none;
+  margin: 0 20px;
 }
-footer .socials a:hover {
+footer .social a:hover {
   color: #9b9b9b;
 }
 
@@ -108,13 +118,21 @@ footer .socials a:hover {
 }
 .FAQ .accordion .accordion-item button {
   font-size: 1.75rem;
-  font-family: Gomarice !important;
 }
 .FAQ .accordion .accordion-item .accordion-body {
   background: black;
 }
 .FAQ .accordion .accordion-item .accordion-button:not(.collapsed) {
   color: black;
+}
+.FAQ .accordion-button:focus {
+  border-color: #dc3545;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
+  border: #dc3545;
+}
+.FAQ .accordion-button:not(.collapsed) {
+  background-color: none !important;
 }
 
 .roadmap {
@@ -146,7 +164,7 @@ footer .socials a:hover {
   left: calc(50% - 2px);
   width: 5px;
   top: -50px;
-  background: white;
+  background: #dc3545;
   display: none;
 }
 .roadmap .line:before,
@@ -157,7 +175,7 @@ footer .socials a:hover {
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  background: white;
+  background: #dc3545;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -193,13 +211,13 @@ footer .socials a:hover {
 }
 .roadmap .bead {
   position: absolute;
-  color: black;
+  color: white;
   font-size: 20px;
   display: block;
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  background: white;
+  background: #dc3545;
   left: 50%;
   top: 4%;
   -webkit-transform: translateX(-50%);
@@ -281,45 +299,52 @@ footer .socials a:hover {
   opacity: 0.6;
 }
 
-.Akina {
-  padding: 70px 0;
-  border-bottom: 1px solid gray;
+.Banner {
+  padding: 130px 0;
 }
-.Akina .card-gif {
+.Banner .card-gif {
   border: 5px solid white;
   border-radius: 20px;
 }
-.Akina .card-gif img {
+.Banner .card-gif img {
   border-radius: 15px;
 }
-.Akina .title {
+.Banner .social {
+  text-align: center;
+}
+.Banner .social a {
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 20px;
+}
+.Banner .social a:hover {
+  color: #b92c28;
+}
+.Banner .title h1 {
+  margin: 30px 0;
+}
+.Banner .title p {
+  margin: 0 0 30px 0;
+}
+
+.about .img-about {
   margin-left: 10%;
   text-align: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   height: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   padding: 0 0 0 10px;
 }
-.Akina .title h1 {
-  text-align: inherit;
-  margin: 0;
-}
-.Akina .title p {
-  margin: 30px 0;
-}
-.Akina .title button {
-  margin: inherit;
-}
-
-.about img {
+.about .img-about img {
+  max-width: 500px;
   border-radius: 20px;
 }
 .about .row {
@@ -353,7 +378,7 @@ footer .socials a:hover {
     width: 100%;
   }
   .about .content img {
-    max-width: 500px !important;
+    max-width: 100% !important;
     margin: auto;
   }
   .about .content .text {
@@ -370,9 +395,16 @@ footer .socials a:hover {
   }
 }
 body {
-  font-family: Gomarice;
-  background: #1b1b1b;
+  font-family: Poppin;
+  background: black;
+  z-index: 1;
   color: white;
+}
+
+#main-content {
+  position: relative;
+  z-index: 2;
+  background-image: radial-gradient(circle farthest-side at 100% 0, rgba(255, 27, 27, 0.2), transparent 72%);
 }
 
 h1, h2 {
@@ -382,7 +414,7 @@ h1, h2 {
 }
 
 p {
-  font-family: Gilory;
+  font-family: Poppin;
   margin-top: 18px;
   font-size: 22px;
 }
@@ -393,9 +425,14 @@ summary {
 }
 
 .btn {
-  border-radius: 18px;
+  border: 2px solid #b92c28;
   font-size: 20px;
   padding: 10px 20px;
+  background: none;
+}
+
+.button {
+  font-family: Poppin;
 }
 
 a {
@@ -403,11 +440,8 @@ a {
   display: inline-block;
 }
 
-.Gallery {
-  padding: 75px 0;
-}
-.Gallery h2 {
-  margin-top: 0;
+.gallery .carousel img {
+  border-radius: 15px;
 }
 
 .team {
@@ -422,7 +456,6 @@ a {
 .team .ourTeam-box {
   border-radius: 20px;
   margin: 0px;
-  background-color: #FFFFFF;
   margin-bottom: 30px;
 }
 .team .section1 {
@@ -437,13 +470,11 @@ a {
   font-family: Gomarice !important;
   font-weight: bold;
   font-size: 1.75rem;
-  color: black;
 }
 .team .section2 span {
   font-family: Gilory;
   margin-top: 18px;
   font-size: 22px;
-  color: black;
 }
 
 /*===========================*/
