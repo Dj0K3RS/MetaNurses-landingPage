@@ -211,7 +211,7 @@ footer .social a:hover {
 .roadmap .bead {
   position: absolute;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   display: block;
   height: 3rem;
   width: 3rem;
@@ -240,7 +240,6 @@ footer .social a:hover {
   margin-left: 0em;
   margin-right: 15px;
   border-radius: 50%;
-  font-family: "Font Awesome 5 Free";
 }
 .roadmap .roadmap ul {
   list-style: none;
@@ -410,6 +409,7 @@ h1, h2 {
   text-align: center;
   font-size: 60px;
   margin: 100px 0 50px 0px;
+  font-weight: bold;
 }
 
 p {
@@ -443,6 +443,14 @@ a {
   border-radius: 15px;
 }
 
+.Partner {
+  text-align: center;
+  padding: 100px 0 0 0;
+}
+.Partner img {
+  max-width: 250px;
+}
+
 .team {
   padding: 70px 0;
 }
@@ -466,12 +474,10 @@ a {
   max-width: 230px;
 }
 .team .section2 p {
-  font-family: Gomarice !important;
   font-weight: bold;
   font-size: 1.75rem;
 }
 .team .section2 span {
-  font-family: Gilory;
   margin-top: 18px;
   font-size: 22px;
 }
