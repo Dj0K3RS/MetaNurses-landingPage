@@ -20,10 +20,25 @@
             
         }
     }
+
+    ul {
+        list-style-type: none
+      }
+      
+      li {
+        display: grid;
+        grid-template-columns: 30px auto;
+     
+        align-items: center;
+      }
+      
+      li::before {
+        content: ">";
+        font-size: 18px;
+        color: #dc3545;
+      }
    
-    .row{
-        margin: 100px 0;
-    }
+   
     .text{
         margin-left: 10%;
         text-align: inherit;
