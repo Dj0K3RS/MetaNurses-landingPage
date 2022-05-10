@@ -264,6 +264,11 @@ footer .social a:hover {
     top: -43px;
   }
 }
+@media screen and (max-width: 991px) {
+  .roadmap {
+    margin-top: 70px;
+  }
+}
 .slider {
   position: relative;
   display: -ms-grid;
@@ -342,7 +347,6 @@ footer .social a:hover {
   padding: 0 0 0 10px;
 }
 .about .img-about img {
-  max-width: 500px;
   border-radius: 20px;
 }
 .about ul {
@@ -383,6 +387,12 @@ footer .social a:hover {
   .about .row {
     margin: 0;
   }
+  .about .img-about {
+    margin: 0;
+  }
+  .about ul li {
+    text-align: left;
+  }
   .about .content {
     text-align: center;
   }
@@ -390,7 +400,7 @@ footer .social a:hover {
     width: 100%;
   }
   .about .content img {
-    max-width: 100% !important;
+    max-width: 250px !important;
     margin: auto;
   }
   .about .content .text {
@@ -453,6 +463,18 @@ a {
   display: inline-block;
 }
 
+@media screen and (max-width: 991px) {
+  h1, h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 100px 0 50px 0px;
+    font-weight: bold;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+}
 .gallery .carousel img {
   border-radius: 15px;
 }
@@ -465,6 +487,17 @@ a {
   max-width: 250px;
 }
 
+@media screen and (max-width: 991px) {
+  .Partner img {
+    max-width: 100% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Partner img {
+    max-width: 200px !important;
+    margin: 20px 0;
+  }
+}
 .team {
   padding: 70px 0;
 }
@@ -496,4 +529,9 @@ a {
   font-size: 22px;
 }
 
+@media screen and (max-width: 991px) {
+  .team {
+    padding-top: 0px;
+  }
+}
 /*===========================*/

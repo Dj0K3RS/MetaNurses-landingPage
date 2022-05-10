@@ -41,4 +41,16 @@ a{
     color: inherit;
     display: inline-block;
 }
-$red:#dc3545
+$red:#dc3545;
+
+@media screen and (max-width: 991px) {
+    h1,h2{
+        text-align: center;
+        font-size: 40px;
+        margin: 100px 0 50px 0px;
+        font-weight: bold;
+    }
+    .button{
+        font-size: 20px;
+    }
+}

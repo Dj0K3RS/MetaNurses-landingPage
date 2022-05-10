@@ -30,7 +30,7 @@
      
     }
     .section2 span{
-     
+    
         margin-top: 18px;
         font-size: 22px;
         
@@ -43,4 +43,10 @@
   
   
   
+}
+
+@media screen and (max-width: 991px) {
+    .team{
+        padding-top: 0px;
+    }
 }

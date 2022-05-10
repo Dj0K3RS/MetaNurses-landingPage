@@ -5,3 +5,19 @@
         max-width: 250px;
     }
 }
+
+@media screen and (max-width: 991px) {
+    .Partner{
+        img{
+            max-width: 100%!important;
+        }
+}
+}
+@media screen and (max-width: 767px) {
+    .Partner{
+        img{
+            max-width: 200px!important;
+            margin: 20px 0;
+        }
+}
+}
