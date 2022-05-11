@@ -7,7 +7,7 @@ body{
 #main-content{
     position: relative;
     z-index: 2;
-    background-image: radial-gradient(circle farthest-side at 100% 0, rgb(255 27 27 / 20%), transparent 72%);
+    background-image: radial-gradient(circle farthest-side at 100% 0, rgba(0, 230, 247, 0.2), transparent 72%);
 
 }
 h1,h2{
@@ -27,10 +27,14 @@ summary{
     padding: 1rem 0px 10px;
 }
 .btn{
-    border: 2px solid #b92c28;
+    border: 2px solid #28b9b9;
     font-size: 20px;
     padding:10px 20px;
     background: none;
+    &:hover{
+        background-color: #28b9b9!important;
+        border: 2px solid white;
+    }
   
    
 }
@@ -40,8 +44,11 @@ summary{
 a{
     color: inherit;
     display: inline-block;
+    &:hover{
+        color: #28b9b9!important;
+    }
 }
-$red:#dc3545;
+
 
 @media screen and (max-width: 991px) {
     h1,h2{
